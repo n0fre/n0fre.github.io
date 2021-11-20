@@ -1,0 +1,231 @@
+p {
+	text-indent: 20px;
+	padding-bottom: 10px;
+	line-height: 1.45;
+	letter-spacing: 0;
+	text-transform: none;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+p.references {
+	line-height: 1.45;
+	letter-spacing: 0;
+	text-transform: none;
+	text-justify: inter-word;
+}
+
+.columns {
+	float: left;
+	width: 100%;
+	padding: 1.5rem 0px;
+}
+
+.essay p.lead-paragraph {
+	color:#654a4e;
+	font-weight:900;
+	font-style:normal;
+	font-size:1rem;
+	line-height:1.35;
+	letter-spacing:-.03em;
+	text-transform:none;
+	text-align:left
+}
+
+.essay h1 {
+	counter-reset: h2counter;
+	margin-top:.375rem;
+	margin-bottom:.5rem;
+	/* color:#654a4e; */
+	font-family:"Open Sans", monospace;
+ 	font-weight:bolder;
+ 	font-style:normal;
+ 	font-size:1.875rem;
+ 	line-height:1.2;
+ 	letter-spacing:0;
+ 	text-transform:none;
+ 	text-align:center
+}
+
+.essay h2:before {
+	content: counter(h2counter) ".\0000a0\0000a0";
+	counter-increment: h2counter;
+	counter-reset: h3counter;
+}
+
+.essay h2.nocount:before {
+	content: none;
+	counter-increment: none;
+}
+
+.essay h3:before {
+	content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+	counter-increment: h3counter;
+}
+
+.essay h2, h3, h4 {
+	font-family:"Open Sans", monospace;
+	text-align:left
+}
+
+.row {
+	max-width: 70.5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	display: block;
+}
+
+header div.tagline {
+	margin-top: .0625rem;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.125rem;
+	line-height: 1.5;
+	letter-spacing: 0;
+	text-transform: none;
+	text-align: center;
+}
+
+.row::before,
+.row::after {
+ content:' ';
+ display:table
+}
+
+.row::after {
+ clear:both
+}
+
+.box {
+	background-color: #F8F5F5;
+	box-shadow: rgba(145,106,112,0.15) 0 6px 24px;
+	border-radius: 4px;
+	margin-top: 3rem;
+	padding-top: 1.6875rem;
+	padding-bottom: 1.5rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50rem;
+}
+
+body {
+	font-family: 'Work Sans', monospace;
+	color: #443235;
+	background: #E6DDDE;
+	font-kerning:normal;
+	font-weight: 400;
+	font-size: 14px;
+	font-variant-numeric:oldstyle-nums;
+	text-rendering: optimizeLegibility;
+    -moz-font-feature-settings: "liga=1, dlig=1"; 
+    -moz-font-feature-settings: "liga", "dlig"; 
+    -ms-font-feature-settings: "liga", "dlig"; 
+    -o-font-feature-settings: "liga", "dlig"; 
+    -webkit-font-feature-settings: "liga", "dlig"; 
+    font-feature-settings: "liga", "dlig";
+	counter-reset: h2counter;
+}
+
+::before {
+	box-sizing: inherit;
+}
+
+label.footnote:hover {
+	color: #F8F5F5;
+	background-color: #443235;
+}
+
+label.footnote {cursor: pointer;}
+
+.ref-content {
+	text-indent: 0px;
+	display: block;
+	overflow: auto;
+	padding: 10px 20px;
+	margin: 10px 0px;
+	font-style: normal;
+	background-color: #E6DDDE;
+	border-radius: 4px;
+}
+
+input[type=checkbox] ~ span.ref-content {display:none;}
+input[type=checkbox]:checked ~ span.ref-content {display:block;}
+input[type=checkbox] {display:none;}
+header div.website-name {
+	font-size: 4rem;
+	font-weight: 700;
+	margin-top: 5.25rem;
+	text-align: center;
+	font-family: Roboto Mono;
+	color: white;
+	text-shadow: rgba(145,106,112,0.15) 0 6px 24px;
+}
+
+nav ul {
+	text-align: center;
+	list-style-type:  none;
+	margin: 0;
+	line-height: 1.5;
+}
+
+nav {
+    margin-top: 1rem;
+    padding-top: .875rem;
+    padding-bottom: 0;
+	display: block;
+}
+
+nav ul li {
+	font-size: .875rem;
+	white-space: nowrap;
+	margin: 0;
+	display: inline-block;
+	font-family: "Roboto Mono";
+	font-weight: 900;
+	font-style: normal;
+	font-size: 1rem;
+	line-height: 1;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	text-align: center;
+	padding-right: 2.4rem;
+}
+
+nav ul li a {
+	color: #654a4e;
+	border-bottom: 2px solid transparent;
+	text-align: center;
+}
+
+a {
+    color: #2e2c2c;
+    text-decoration: none;
+    line-height: inherit;
+    cursor: pointer;
+	background-color: transparent;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul.no-bullets {
+	text-align: justify;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1.45;
+	letter-spacing: 0;
+	text-transform: none;
+	text-justify: inter-word;
+	text-indent: -20px;
+	padding-left: 20px;
+  }
