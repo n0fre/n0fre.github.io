@@ -1,0 +1,24 @@
+<header class="row">
+    <div class="columns">
+      <div class="website-name">Kasper Blom</div>
+      <div class="tagline">Essays on philosophy, bioethics and health</div>
+      <nav>
+        <ul>
+          <li><a href="/essays">Essays</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<script>
+    //set Active link according to pages
+    var origin = window.location.origin;
+    var page_location = window.location.href.replace(origin + '/', '').trim();
+    // console.log(page_location);
+    $('.navbar_links a[href*="' + page_location + '"]').addClass('active').siblings().removeClass('active');
+    
+    if (page_location == "" || null) {
+        $('.navbar_links a[href="/"]').addClass('active').siblings().removeClass('active');
+    }
+</script>
