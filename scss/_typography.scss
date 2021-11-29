@@ -1,0 +1,20 @@
+.worksans_regular_base {
+    font-family: 'Work Sans', monospace;
+	color: $primary_dark;
+	background: $primary_light;
+	font-kerning:normal;
+	font-weight: 400;
+	font-variant-numeric:oldstyle-nums;
+	text-rendering: optimizeLegibility;
+    -moz-font-feature-settings: "liga=1, dlig=1"; 
+    -moz-font-feature-settings: "liga", "dlig"; 
+    -ms-font-feature-settings: "liga", "dlig"; 
+    -o-font-feature-settings: "liga", "dlig"; 
+    -webkit-font-feature-settings: "liga", "dlig"; 
+    font-feature-settings: "liga", "dlig";
+}
+
+.worksans_reg_14 {
+    @extend .worksans_regular_base;
+    font-size: 14px;
+}
